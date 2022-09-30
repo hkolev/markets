@@ -5,7 +5,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 import { currencies } from '../../data/currencies';
 import { pairs } from '../../data/pairs';
-import { LatestDataTable } from '../../components/LatestDataTable';
+import { LatestDataTable } from '../../components/latest-datatable';
 
 export const Home = () => {
   const [baseAsset, setBaseAsset] = useState<string | null>('');

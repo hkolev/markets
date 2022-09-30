@@ -3,12 +3,12 @@ import './App.css';
 import { Router } from './pages/router';
 import Container from '@mui/material/Container';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { MenuBar } from './components/DataWithLoader/MenuBar';
+import { MenuBar } from './components/menu-bar';
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      // refetchInterval: 3000,
+      refetchInterval: 7000,
       refetchOnWindowFocus: false,
     },
   },

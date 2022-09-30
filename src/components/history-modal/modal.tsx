@@ -5,7 +5,7 @@ import { useBinanceOrderHistory } from '../../services/binance/useBinanceHistory
 import { useBitfinexHistory } from '../../services/bitfinex/useBitfinexHistory';
 import { useHuobiHistory } from '../../services/huobi/useHuobiHistory';
 import { useKrakenHistory } from '../../services/kraken/useKrakenHistory';
-import { OrderTable } from '../OrderTable';
+import { OrderTable } from '../order-table';
 
 interface IHistoryModal {
   open: boolean;

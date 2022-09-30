@@ -5,10 +5,10 @@ import { useBinanceOrderHistory } from '../../services/binance/useBinanceHistory
 import { useBitfinexHistory } from '../../services/bitfinex/useBitfinexHistory';
 import { useHuobiHistory } from '../../services/huobi/useHuobiHistory';
 import { useKrakenHistory } from '../../services/kraken/useKrakenHistory';
-import { OrderTable } from '../../components/OrderTable';
+import { OrderTable } from '../../components/order-table';
 import { pairs } from '../../data/pairs';
 import { Exchanges } from '../../services/constants';
-import { LatestDataTable } from '../../components/LatestDataTable';
+import { LatestDataTable } from '../../components/latest-datatable';
 
 export const PairDetails = () => {
   const { pair = '' } = useParams();

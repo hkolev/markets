@@ -11,7 +11,7 @@ import { useBinancePrice } from '../../services/binance/useBinancePrice';
 import { useBitfinexPrice } from '../../services/bitfinex/useBitfinexPrice';
 import { useHuobiPrice } from '../../services/huobi/useHuobiPrice';
 import { useKrakenPrice } from '../../services/kraken/useKrakenPrice';
-import { DataWithLoader } from '../../components/DataWithLoader';
+import { DataWithLoader } from '../../components/data-with-loader';
 import { Exchanges } from '../../services/constants';
 
 import { HistoryModal } from '../history-modal';

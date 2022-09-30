@@ -1,7 +1,7 @@
 import { Grid, Typography } from '@material-ui/core';
 
 import { pairs } from '../../data/pairs';
-import { LatestDataTable } from '../../components/LatestDataTable';
+import { LatestDataTable } from '../../components/latest-datatable';
 import { useParams } from 'react-router-dom';
 
 export const Pair = () => {
