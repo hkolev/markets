@@ -2,8 +2,8 @@
 
 You can start the app for windows in parallel with `yarn start` or with separate commands:
 
-yarn run server - to start the server
-yarn run client - to start the client
+- `yarn run server` - to start the server
+- `yarn run client` - to start the client
 
 # Getting Started with Create React App
 
