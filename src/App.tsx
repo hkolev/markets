@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { Router } from './pages/router';
+import Container from '@mui/material/Container';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { MenuBar } from './components/DataWithLoader/MenuBar';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // refetchInterval: 3000,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Container maxWidth="xl">
+          <MenuBar />
+          <Router />
+        </Container>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 

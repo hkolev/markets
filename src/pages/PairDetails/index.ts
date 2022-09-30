@@ -1,0 +1,1 @@
+export { PairDetails } from './pairDetails';

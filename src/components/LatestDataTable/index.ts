@@ -1,0 +1,1 @@
+export { LatestDataTable } from './latestDataTable';
