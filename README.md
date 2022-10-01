@@ -1,6 +1,8 @@
 # Starting the app
 
-You can start the app for windows in parallel with `yarn start` or with separate commands:
+You can start the app with `yarn start` which will start both client and server.
+
+Or with separate commands:
 
 - `yarn run server` - to start the server
 - `yarn run client` - to start the client
