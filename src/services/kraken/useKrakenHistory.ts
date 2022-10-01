@@ -4,7 +4,7 @@ import { API_URL } from '../constants';
 import { fetcher } from '../fetcher';
 
 const fetchHistory = async (ticker: string) => {
-  return fetcher(`${API_URL.KRAKEN}/0/public/Depth?pair=${ticker}`);
+  return fetcher(`${API_URL.KRAKEN}/Depth?pair=${ticker}`);
 };
 
 export const useKrakenHistory = (ticker: string) => {
